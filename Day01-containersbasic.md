@@ -9,10 +9,14 @@ start the container:
 
 open the SQL client and create a database
 
+`docker exec -it <container_id|container_name> /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P <your_password>`
+`CREATE DATABASE ITS;`
+`GO`
+
 connect to the container:
 
-`docker exec -it containter bash`
-`cd /var/opt/mysql`
+`docker exec -it <containter_id> bash`
+`cd /var/opt/mssql`
 
 show the data
 
